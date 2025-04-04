@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ template_addUserEmail_TITTLE}}</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.7;
+            color: #333;
+        }
+
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        table tbody tr:not(:first-child):not(:last-child) {
+            padding: 0 !important;
+            display: block;
+            margin-bottom: 0px;
+        }
+
+        table tbody td>div:last-child {
+            margin-top: 10px;
+        }
+
+        table tbody tr {
+            margin-bottom: 0;
+        }
+
+        table tbody td>div {
+            font-size: 16px !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <table style="width:100%; max-width: 600px;">
+            <tr>
+                <td style="padding-bottom: 15px;">
+                    <img width="150px" src="{{dataUrl}}" alt="TCDAM" style="width:150px; max-width: 150px;">
+                </td>
+            </tr>
+            <tr style="padding-bottom: 20px;
+                            display: block;">
+                <td style="text-align: left;font-size: 16px;
+                            padding: 15px 0 0;
+                            font-weight: normal;
+                            line-height: normal;"> {{template_DEAR}} {{user_first_name}}, </td>
+            </tr>
+        </table>
+        <table align="left" style="width:100%; text-align: left;
+                margin: 0 auto;">
+
+            <tr>
+                <td style="font-size: 16px;
+      
+                                  padding: 15px 0 0;
+                                  font-weight: normal;
+                                  line-height: normal;">{{body_data}} </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <strong>{{template_addUserEmail_LOGIN_DETAIL_MESSAGE}}:</strong>
+                </td>
+            </tr>
+
+
+            <tr style="max-width: 500px;width: 500px;display: block;">
+                <td>
+                    <strong>{{template_EMAIL}}:</strong>
+                </td>
+
+                <td>
+                    {{email}}
+                </td>
+            </tr>
+
+            <tr style="max-width: 500px;width: 500px;display: block;">
+                <td>
+                    <strong>{{template_PASSWORD}}:</strong>
+                </td>
+
+                <td>
+                    {{password}}
+                </td>
+            </tr>
+            <tr>
+                <td style="padding: 25px 0">
+                    <strong> <a href="{{loginUrl}}" style="color:rgb(0, 89, 255);">{{loginUrl}}</a></strong>
+                </td>
+
+
+            </tr>
+
+            <tr>
+                <td style="height: 80px;">&nbsp;</td>
+            </tr>
+
+
+            <tr>
+                <td style="border-top: 1px solid #f2f2f2; padding-top: 10px;">
+                    <div style="font-size: 16px; font-weight: normal;display: block; line-height: 27px">
+                        {{template_CONTACT_FOR_QUESTION_MESSAGE }}
+                    </div>
+
+                    <div style="font-size: 16px; font-weight: normal;display: block; line-height: 27px">
+                        {{template_WEBSITE_MORE_DETAIL_MESSAGE}}
+                    </div>
+
+                    <div style="font-size: 16px; font-weight: normal;display: block; line-height: 27px"><a
+                            href="https://www.tcdam.com"
+                            style="color:rgb(0, 89, 255); font-size: 16px; line-height: 27px">https://www.google.com</a>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+    </div>
+</body>
+
+</html>
